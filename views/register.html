@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ChatOn</title>
+    <link rel="stylesheet" href="../static/register.css">
+</head>
+
+<body>
+    <div class="background_img">
+        <img src="../static/logo.png" alt="">
+    </div>
+    <section class="registration_container">
+        <h1>Register ChatOn</h1>
+        <form class="register_form" action="/register" method="post">
+            <div class="profile_box">
+                <input type="file" id="profile" class="profile" name="profile" accept="image/*" required>
+            </div>
+            <div class="box">
+                <label for="username">Username :</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="box">
+                <label for="fullName">Full Name :</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="box">
+                <label for="phoneNumber">Phone :</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="box">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="box">
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="box">
+                <label for="confirmPassword">Confirm Password :</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="button_box">
+                <input type="submit" value="Register" class="register_btn">
+                <li class="already_account">Already have an account? <a href="/login">Log in</a></li>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

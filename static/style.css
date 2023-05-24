@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+body{
+    background-color: #393E46;
+}
+
+.header_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_div{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo{
+    height: 5rem;
+    width: fit-content;
+}
+
+.logo_div h1{
+    color: #4ECCA3;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+}
+
+.logout_li{
+    font-size: 1.8rem;
+    list-style: none;
+    margin-right: 1.5rem;
+    border: 2px solid #4ECCA3;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #4ECCA3;
+}
+
+.logout_li:hover{
+    background-color: #4ECCA3;
+    color: #393E46;
+    font-weight: bolder;
+}
+
+.logout_a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.list_container{
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+.chat_container{
+    border: 2px solid white;
+    border-radius: 0.5rem;
+}
+
+.message_container{
+    width: 60rem;
+    margin: auto;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.message{
+    background-color: #EEEEEE;
+    width: fit-content;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.right{
+    float: right;
+    clear: both;
+    margin-right: 1rem;
+}
+
+.left{
+    float: left;
+    clear: both;
+    margin-left: 1rem;
+}
+
+.center{
+    background-color: rgb(106, 106, 106);
+    width: fit-content;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    clear: both;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    border: none;
+}
+
+.sendMessage_container{
+    display: flex;
+    justify-content: center;
+}
+
+#send_form{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+#enterMessage{
+    width: 55rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    background: none;
+    border-color: #EEEEEE;
+    color: #EEEEEE;
+}
+
+#sendMessage_btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#sendMessage_btn i{
+    color: #4ECCA3;
+    font-size: 2.2rem;
+}
+
+@media(max-width: 1000px){
+    .logo{
+        height: 30%;
+        width: 30%;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+    .nav_div{
+        width: 40rem;
+        padding: 0.4;
+    }
+    .message_container{
+        width: 40rem;
+        height: 65vh;
+    }
+    #enterMessage{
+        width: 36rem;
+        height: 2.5rem;
+    }
+}
+
+@media(max-width: 700px){
+    .logo{
+        height: 30%;
+        width: 30%;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+    .nav_div{
+        width: 28rem;
+        padding: 0.4;
+    }
+    .message_container{
+        width: 28rem;
+        height: 65vh;
+    }
+    #enterMessage{
+        width: 23rem;
+        height: 2.5rem;
+    }
+
+}
+
+@media(max-width: 500px){
+    .nav_div{
+        width: 21rem;
+        padding: 0.4;
+    }
+    .message_container{
+        width: 21rem;
+        height: 65vh;
+    }
+    #enterMessage{
+        width: 17rem;
+        height: 2.5rem;
+    }
+
+}
+

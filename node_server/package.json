@@ -1,0 +1,14 @@
+{
+  "name": "node_server",
+  "version": "1.0.0",
+  "description": "this is node server for realtime chat application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gohil Mitul",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.6.1"
+  }
+}

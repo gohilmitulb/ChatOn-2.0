@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatOn</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header_div">
+        <div class="logo_div">
+            <img src="../static/logo.png" class="logo" alt="">
+            <h1>ChatOn</h1>
+        </div>
+        <div class="logout">
+            <a class="logout_a" href="/logout">
+                <li class="logout_li">Log out</li>
+            </a>
+        </div>
+    </header>
+    <section class="container">
+        <!-- <div class="list_container"></div> -->
+        <div class="chat_container">
+            <div class="message_container"></div>
+
+            <div class="sendMessage_container">
+                <form action="" id="send_form">
+                    <input type="text" name="enterMessage" id="enterMessage">
+                    <button id="sendMessage_btn" type="submit"><i class="material-icons">&#xe163;</i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
